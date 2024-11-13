@@ -13,6 +13,9 @@ export default function Board() {
 
   function handleSquareClick(i) {
     console.log("square clicked")
+    if (squares[i]) {
+      return; //if the Square has already been selected return early
+    }
     const nextSquares = squares.slice(); //make a copy of the data (no reference)
     if (xIsNext) {
       nextSquares[i] = "X";
