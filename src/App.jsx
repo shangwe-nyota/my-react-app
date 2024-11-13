@@ -1,9 +1,21 @@
-export default function Square() {
-
+//Export keyword makes the function accessible outside the file
+export default function Board() {
   return (
   <>
-  <button className="square">X</button>
-  <button className="square">X</button>
+  <div className="board-row">
+    <button className="square">X</button>
+    <button className="square">X</button>
+    <button className="square">X</button>
+  </div>
+  <div className="board-row">
+    <button className="square">X</button>
+    <button className="square">X</button>
+    <button className="square">X</button>
+  </div>  <div className="board-row">
+    <button className="square">X</button>
+    <button className="square">X</button>
+    <button className="square">X</button>
+  </div>
   </>
   );
 }
