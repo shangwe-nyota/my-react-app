@@ -7,7 +7,8 @@ function Square({value, onSquareClick}) {
 }
 
 //Export keyword makes the function accessible outside the file
-export default function Board(i) {
+export default function Board() {
+  const [xIsNext, setXIsNext] = useState(true); //x starts out try by default
   const [squares, setSquares] = useState(Array(9).fill(null)); //Set board to 9 empty squares
   function handleSquareClick(i) {
     console.log("square clicked")
