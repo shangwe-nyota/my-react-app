@@ -5,6 +5,7 @@ function Square() {
   const [value, setValue] = useState(null); //state how we remember things in react
   function handleClick() {
     console.log("Clicked!");
+    setValue("X"); //set the value variable to "X" on click
   }
 
   return (
